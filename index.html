@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SF poop work log</title>
+<meta name="description" content="A work log of each idea we tested about what causes street poop reports in San Francisco, and what the data showed.">
+<link rel="stylesheet" href="styles.css">
+<script src="data/viz.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="wrap">
+  <p class="eyebrow">Work log · Phase 1 · 20 November 2026</p>
+  <h1>What is causing the poop in San Francisco?</h1>
+  <p class="lede">We tested 14 ideas with a year of 311 reports. Street poop shows up where the camps
+  are. It is packed into a few hundred blocks. It is not a dog-walking problem in home areas. We could
+  not tell if it comes from people or their pets.</p>
+  <p class="note">Camp reports are 311 reports of tents or camps on the street. Poop reports are 311
+  reports of human or animal waste.</p>
+  <dl class="tiles">
+    <div><dt>Poop reports, Nov 2025 to Oct 2026</dt><dd>51,439</dd></div>
+    <div><dt>Blocks that hold half of them</dt><dd>233</dd></div>
+    <div><dt>Share from the half of the city with the most camp reports</dt><dd>89%</dd></div>
+    <div><dt>Share from the other half, where 57% of people live</dt><dd>11%</dd></div>
+  </dl>
+</header>
+
+<main class="wrap">
+
+<section class="feature" aria-labelledby="h-care">
+  <p class="eyebrow">Prototype to test the pets idea</p>
+  <h2 id="h-care">A care-based plan: help the animals</h2>
+  <p class="note">This plan tests one idea the data could not test. The idea is that pets of unhoused
+  people cause much of the poop. It goes with the wider plan in <a href="#h-s8">Step 8</a>. That plan
+  does not rest on this idea.</p>
+  <p class="pull">Healthy, well-fed dogs leave poop that is easier to pick up. Regular care gives owners
+  the bags and the habit to do it.</p>
+
+  <div class="assume">
+    <p><strong>Working guess:</strong> much of the poop on the hot blocks comes from the pets of unhoused
+    people.</p>
+    <ul>
+      <li><strong>What backs it:</strong> poop reports cluster where camps are. Camp reports explain 85%
+      of the gap between areas. Only 5% of poop reports are on blocks with no camp reports
+      (<a href="#h-s4">Step 4</a>).</li>
+      <li><strong>What is still open:</strong> the data cannot tell pets from people
+      (<a href="#h-s1">Step 1</a>).</li>
+      <li><strong>Why to be careful:</strong> everyone needs a toilet. Only some unhoused people have
+      pets. Studies put it near one in ten. Counts range from 6% to 25%
+      (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7602009">research review</a>,
+      <a href="https://www.aspca.org/improving-laws-animals/public-policy/housing/people-pets-experiencing-homelessness">ASPCA</a>).
+      We have no count for San Francisco.</li>
+    </ul>
+  </div>
+
+  <h3>What we would do, at one regular stop on the hot blocks</h3>
+  <ol class="actions" role="list">
+    <li><strong>Hand out one steady dog food.</strong> A change of food can give dogs loose poop
+    (<a href="https://www.merck-animal-health-usa.com/pet-owners/pet-health/health-issues/dealing-with-diarrhea-in-pets/">Merck Animal Health</a>,
+    <a href="https://vcahospitals.com/know-your-pet/diarrhea-in-dogs">VCA</a>). A steady food takes away
+    one cause. Our own guess, not yet tested: loose poop is hard to bag, so it gets left.</li>
+    <li><strong>Tie poop bags to each food pack.</strong> Put a bin at the stop.</li>
+    <li><strong>Offer deworming and basic vet care.</strong> Gut worms can give dogs loose poop
+    (<a href="https://www.merckvetmanual.com/dog-owners/digestive-disorders-of-dogs/disorders-of-the-stomach-and-intestines-in-dogs">Merck Veterinary Manual</a>).
+    We do not know how many of these dogs have them.</li>
+    <li><strong>Ask owners to feed at set times.</strong> Vets say set meal times help a dog go at set
+    times (<a href="https://vcahospitals.com/pets-first/know-your-pet/feeding-times-and-frequency-for-your-dog">VCA</a>,
+    <a href="https://www.akc.org/expert-advice/training/puppy-training/setting-schedules-and-developing-a-routine-for-your-new-puppy/">AKC</a>).</li>
+  </ol>
+
+  <h3>Groups we could work with</h3>
+  <p>These groups already do parts of this in San Francisco. Working with them would be faster than
+  starting from scratch.</p>
+  <ul>
+    <li><strong><a href="https://sfccc.squarespace.com/veterinary-street-outreach-services">Vet SOS</a>.</strong>
+    Free vet care for the pets of unhoused people since 2001. It runs pop-up clinics. You need to book
+    a visit. It says it sees more than 500 animals a year. It also brings pet food and supplies to the
+    Mission.</li>
+    <li><strong><a href="https://www.baywoof.org/featured-article/food-4-paws-full-belly-bus-expands-help-for-struggling-sf-pet-owners">Full Belly Bus</a>.</strong>
+    Its Food 4 Paws program gives out free dog and cat food. It has sites in the Haight, the Mission and
+    other parts of the city.</li>
+    <li><strong>SF SPCA.</strong> It works with Vet SOS on some urgent care
+    (<a href="https://sfccc.squarespace.com/eligibility-vetsos">Vet SOS services</a>). It has also given
+    pet food through the <a href="https://www.sfspca.org/blog/pet-food-bank-feeding-families-means-feeding-pets-too/">Mission Food Hub</a>.</li>
+  </ul>
+  <p class="note">These facts come from web pages. Some have no date. We have not called any of these
+  groups. Check times and interest with each one.</p>
+
+  <dl class="takeaways">
+    <div><dt>Why food</dt><dd>It brings owners back each week. The bags, bin and vet care do most of the
+    work.</dd></div>
+    <div><dt>What to expect</dt><dd>Fewer piles left behind, not fewer piles. Better food alone will not
+    cut reports much.</dd></div>
+    <div><dt>How to measure</dt><dd>Count piles on these blocks before and after. Do the same on like
+    blocks with no stop. Note dog or human. That also tests the working guess. 311 reports cannot show
+    if a pile was picked up.</dd></div>
+  </dl>
+</section>
+
+<section aria-labelledby="h-ledger">
+  <p class="step">Work log</p>
+  <h2 id="h-ledger">Every idea, and where it ended up</h2>
+  <p>They are in the order they came up. Each one links to the step that tested it.</p>
+  <div class="table-scroll">
+  <table class="ledger">
+    <thead><tr><th scope="col">Idea</th><th scope="col">Raised by</th><th scope="col">Result</th><th scope="col">Why</th></tr></thead>
+    <tbody id="ledger"></tbody>
+  </table>
+  </div>
+</section>
+
+<section aria-labelledby="h-s1">
+  <p class="step">Step 1</p>
+  <h2 id="h-s1">First suspects, and one hard limit</h2>
+  <p>Aaron began with three ideas. One: pets of unhoused people. Two: housed dog owners on walks near
+  home. Three: a link to crowding and home cost. Claude added a fourth: people with no toilet to use.</p>
+  <p>The limit: 311 has just one category for this. Its code is <code>human_waste_or_urine</code>. It
+  mixes dog poop, human poop and pee. No field tells them apart. We call them all poop reports.</p>
+  <h3>Set aside to fit a one-hour limit</h3>
+  <ul>
+    <li><strong>Photo check of poop type.</strong> The plan was to sort report photos into dog, human or
+    pee. That would split pets from people. We dropped it for time. We also never checked how many
+    reports have a clear photo.</li>
+    <li><strong>Dog counts,</strong> such as licenses and dog parks.</li>
+    <li><strong>Public toilet sites and hours.</strong> We added these later, in Step 7.</li>
+    <li><strong>Change over time.</strong> This is one 12-month view.</li>
+    <li><strong>Block-level math.</strong> Our main test uses census areas, not blocks.</li>
+  </ul>
+  <p>So every chart below treats all poop as one thing.</p>
+</section>
+
+<section aria-labelledby="h-s2">
+  <p class="step">Step 2</p>
+  <h2 id="h-s2">What earlier work had found</h2>
+  <p>In June 2026 we looked at this for another project. That work left three warnings.</p>
+  <ul>
+    <li>Poop and camp reports sit in the same places. So do litter and dumped beds. Some of the link is
+    just busy streets.</li>
+    <li>Over time, poop and camp reports did not rise and fall as one. The link scores were near zero:
+    0.20 in the Tenderloin and −0.09 in the Mission.</li>
+    <li>311 counts who reports, not what is there. The Mission filed 4.7 times as many reports as
+    Bayview. Field checks found the streets were about the same.</li>
+  </ul>
+  <p>So we added a check to each test: reports of full trash cans. They show how much an area reports
+  in general.</p>
+</section>
+
+<section aria-labelledby="h-s3">
+  <p class="step">Step 3</p>
+  <h2 id="h-s3">Where the reports are</h2>
+  <p>Each square is a block about 100 meters wide. Both maps use the same scale.</p>
+  <label class="check"><input type="checkbox" id="halfOnly"> Show only the 233 blocks that hold half of all poop reports</label>
+  <div class="maps">
+    <figure>
+      <figcaption>Poop reports per block</figcaption>
+      <svg id="mapWaste" role="img" aria-label="Map of San Francisco. Poop reports cluster in the Tenderloin, South of Market and the Mission. There are few in other places."></svg>
+    </figure>
+    <figure>
+      <figcaption>Camp reports per block</figcaption>
+      <svg id="mapEnc" role="img" aria-label="Map of San Francisco. Camp reports cluster in the same Tenderloin, South of Market and Mission blocks as poop reports."></svg>
+    </figure>
+  </div>
+  <ul class="legend" id="mapLegend" aria-label="Reports per block over 12 months"></ul>
+  <p>Three areas hold 55% of poop reports. They are the Tenderloin (22%), the Mission (19%) and South of
+  Market (14%). In all, 4,619 blocks have a report. Just 233 of them hold half.</p>
+
+  <h3>The city, cut down to its hot blocks</h3>
+  <p>Take away every block but those 233. San Francisco shrinks to 24 islands. One island, in the
+  Tenderloin, holds more than a third of the city's poop reports.</p>
+  <figure>
+    <figcaption>The 233 blocks that hold half of all poop reports</figcaption>
+    <svg id="islands" role="img" aria-label="Map of San Francisco with only the 233 hot blocks shown. They form 24 small islands in the northeast of the city. The largest is in the Tenderloin. It has 143 blocks and 36.5% of all poop reports. The second is in the Mission. It has 41 blocks and 6.7%."></svg>
+  </figure>
+  <p>Zoomed in, each island shows its own street map. Darker blocks have more reports. A gap in an island
+  is a block with too few reports to count. Blocks that touch at a corner are one island. Diamonds and
+  circles are public toilets.</p>
+  <div class="key" role="group" aria-labelledby="key-title">
+    <p id="key-title" class="key-title">How to read the island maps</p>
+    <ul class="legend" id="panelLegend" aria-label="Poop reports per block over 12 months"></ul>
+    <ul class="legend" id="toiletLegend" aria-label="Public toilets"></ul>
+    <ul class="legend" id="gapLegend" aria-label="Gaps"></ul>
+  </div>
+  <div class="panels" id="panels"></div>
+  <p class="note">Street maps © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors
+  © <a href="https://carto.com/attributions">CARTO</a>.</p>
+</section>
+
+<section aria-labelledby="h-s4">
+  <p class="step">Step 4</p>
+  <h2 id="h-s4">The camp link</h2>
+  <p>Each dot is one census area. The city has 233 of them. Areas with more camp reports per person have
+  more poop reports per person. That holds from the low end to the high end. Income does not split the
+  dots.</p>
+  <figure>
+    <figcaption>Poop reports and camp reports, per 1,000 people (log scales)</figcaption>
+    <ul class="legend" id="scatterLegend" aria-label="Median household income of the area"></ul>
+    <svg id="scatter" role="img" aria-label="Dot chart of 233 census areas. Poop reports per 1,000 people rise in step with camp reports per 1,000 people. The match score is 0.88 out of 1. Low, middle and high income areas all sit on the same line."></svg>
+    <p class="note">The match is strong: 0.88 on a scale where 1 is a perfect match. The data for each
+    area is in <a href="data/tracts.csv">tracts.csv</a>.</p>
+  </figure>
+  <p>Is this just busy streets? In part. Look at blocks with a camp report each week or more. They hold
+  42% of poop reports. They hold 25% of trash can reports. So poop is tied to those blocks far more than
+  trash is. But trash clusters there too.</p>
+  <p>We then held four things steady: how much an area reports, how crowded it is, income and rent. Camp
+  reports were still the top factor (0.58). Crowding came next (0.22).</p>
+</section>
+
+<section aria-labelledby="h-s5">
+  <p class="step">Step 5</p>
+  <h2 id="h-s5">The dog-walker idea: income, home cost and crowding</h2>
+  <p>First, a map of where the pattern breaks. Say housed dog owners were a big source. Then many blocks
+  would have repeat poop and no camp reports close by.</p>
+  <figure>
+    <figcaption>Blocks with repeat poop reports, with and without camp reports close by</figcaption>
+    <ul class="legend" id="mismatchLegend"></ul>
+    <svg id="mapMismatch" class="map" role="img" aria-label="Map of San Francisco. 1,642 blocks with repeat poop reports have camp reports close by. They cluster in the northeast and the Mission. Only 107 blocks have repeat poop with no camp reports close by. They are spread across the Sunset, Western Addition, Bayview and Richmond. 23 blocks have camp reports but almost no poop."></svg>
+    <p class="note">Repeat means 5 or more poop reports in 12 months. Close by means 12 or more camp
+    reports within about 150 meters.</p>
+  </figure>
+  <p>There are 107 such blocks. They hold 840 reports, or 1.6% of the city's total. They are the best
+  bets for a dog-owner source. They are spread through the Sunset, Western Addition, Bayview and
+  Richmond. The flip side is even more rare. Just 23 blocks have steady camp reports and almost no
+  poop.</p>
+  <p>Next, income. We took the half of areas with the fewest camp reports. They hold 57% of the people
+  and 11% of poop reports.</p>
+  <figure>
+    <figcaption>Reports per 1,000 people in areas with few camps, by income third</figcaption>
+    <ul class="legend" id="barsLegend"></ul>
+    <svg id="bars" role="img" aria-label="Bar chart for areas with few camps. Poop reports per 1,000 people are 9.6, 10.9 and 14.9 for the low, middle and high income thirds. Full trash can reports are 9.7, 12.9 and 15.1. Both rise in step."></svg>
+    <details><summary>Show as a table</summary><div id="barsTable"></div></details>
+  </figure>
+  <p>Richer areas report more poop. But they report more full trash cans by the same amount. So richer
+  areas seem to report more, not have more poop. Rent shows no pattern (12.2, 12.3, 10.7 from low to
+  high). Crowding shows a small rise (9.8, 12.2, 13.2).</p>
+</section>
+
+<section aria-labelledby="h-s6">
+  <p class="step">Step 6</p>
+  <h2 id="h-s6">A wrong turn on timing</h2>
+  <p>Reports peak from 7 to 10am. Claude took that to mean poop builds up at night and is found in the
+  morning. Claude then said toilets should stay open at night. Aaron had a simpler idea: people report
+  on the way to work. We tested it.</p>
+  <figure>
+    <figcaption>Share of poop reports filed in each hour</figcaption>
+    <ul class="legend" id="hoursLegend"></ul>
+    <svg id="hours" role="img" aria-label="Line chart of poop reports by hour. On weekdays reports peak at 8am, and 40% are filed from 7 to 10am. On weekends the peak moves to 10am. The 7 to 10am share falls to 30%."></svg>
+    <details><summary>Show as a table</summary><div id="hoursTable"></div></details>
+  </figure>
+  <p>On weekdays the peak is at 8am. On weekends it moves to 10am. Trash can and graffiti reports shift
+  the same way. So the peak tracks when people are out. We dropped the night idea.</p>
+  <p>Two things show the work-trip idea is not the whole story. Weekend reports drop only 15%, from 148
+  to 125 a day. And poop reports are still more of a morning thing than the others. On weekdays 40% come
+  in from 7 to 10am. For trash cans it is 31%. For graffiti it is 23%.</p>
+</section>
+
+<section aria-labelledby="h-s7">
+  <p class="step">Step 7</p>
+  <h2 id="h-s7">Toilets and homeless services</h2>
+  <p>Aaron asked us to map homeless services. People may walk from where they stay to get food. The poop
+  may follow that route. We looked and stopped early. The city's open data has no good list of meal
+  sites, shelters or drop-in centers. Its list of city sites shows just five run by the homelessness
+  department. So this idea is still not tested.</p>
+  <p>The search did turn up public toilets. They bear on the no-toilet idea. They are marked on the
+  island maps in Step 3.</p>
+  <ul id="toiletFacts"></ul>
+  <div class="table-scroll">
+  <table>
+    <caption>Staffed Pit Stop toilets on or next to the hot blocks</caption>
+    <thead><tr><th scope="col">Pit Stop</th><th scope="col">Listed hours</th><th scope="col">Open at night</th></tr></thead>
+    <tbody id="pitTable"></tbody>
+  </table>
+  </div>
+  <p>Toilets are already where the poop is. It looks like the city put them there in response. So the two
+  big islands mostly have toilets now. Night hours are thin. The small islands in Hayes Valley and North
+  Beach have no Pit Stop at all. None of this shows that toilets cut reports. That takes a
+  before-and-after test.</p>
+</section>
+
+<section aria-labelledby="h-s8">
+  <p class="step">Step 8</p>
+  <h2 id="h-s8">Proposed solution</h2>
+  <p>Aim at the 233 blocks that hold half the reports.</p>
+  <ol>
+    <li><strong>Close the toilet gaps.</strong> Do not add toilets everywhere. The two big islands have
+    Pit Stops, but few list night hours. The Hayes Valley and North Beach islands have none.</li>
+    <li><strong>Clean those blocks on a set schedule.</strong> Do not wait for complaints.</li>
+    <li><strong>Give out pet poop bags and supplies through outreach teams.</strong> It is cheap. It
+    covers the pet idea without waiting for proof. The <a href="#h-care">care-based plan</a> at the top
+    of this page builds on this. It also names groups to work with.</li>
+    <li><strong>Measure it.</strong> Count before and after. Compare with like blocks that got no
+    help.</li>
+  </ol>
+  <h3>What to keep in mind</h3>
+  <ul>
+    <li>311 counts reports, not poop. Camp reports come in the same way. So some of the link may be who
+    reports.</li>
+    <li>These are links across places in one year. They do not prove cause.</li>
+    <li>The census caps income at $250,001 and rent at $3,501.</li>
+  </ul>
+  <h3>Next phase</h3>
+  <p>Sort a sample of report photos to split people from pets. Find a list of service sites. Publish the
+  hot blocks with street addresses.</p>
+</section>
+
+</main>
+<footer class="wrap">
+  <p>Data: SF 311 Cases from data.sf.gov (code <code>vw6y-z8j6</code>). Census counts for 2023. Census
+  area maps. Our methods and numbers are in <a href="findings.md">findings.md</a>.</p>
+</footer>
+<div id="tip" class="tip" role="status" hidden></div>
+</body>
+</html>

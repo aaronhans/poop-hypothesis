@@ -1,0 +1,419 @@
+{
+ "totals": {
+  "waste": 51439,
+  "encampment": 66992,
+  "control": 22571
+ },
+ "assigned_to_tract": {
+  "waste": 51437,
+  "encampment": 66980,
+  "control": 22570
+ },
+ "tracts_used": 237,
+ "concentration": {
+  "tracts_for_half": 21,
+  "tracts_total": 237,
+  "top10_tract_share": 0.31,
+  "cells_with_waste": 4619,
+  "cells_for_half": 233,
+  "top1pct_cell_share": 0.209,
+  "top_neighborhoods": [
+   [
+    "Tenderloin",
+    11266,
+    0.219
+   ],
+   [
+    "Mission",
+    9718,
+    0.189
+   ],
+   [
+    "South of Market",
+    7182,
+    0.14
+   ],
+   [
+    "Nob Hill",
+    4329,
+    0.084
+   ],
+   [
+    "Hayes Valley",
+    2494,
+    0.048
+   ],
+   [
+    "Western Addition",
+    1664,
+    0.032
+   ],
+   [
+    "North Beach",
+    1388,
+    0.027
+   ],
+   [
+    "Financial District/South Beach",
+    1307,
+    0.025
+   ]
+  ]
+ },
+ "encampment_exposure_share": {
+  "waste": {
+   "0": 0.007,
+   "1-11 (<1/mo)": 0.048,
+   "12-51": 0.101,
+   "52+ (1+/wk)": 0.844
+  },
+  "control": {
+   "0": 0.027,
+   "1-11 (<1/mo)": 0.121,
+   "12-51": 0.189,
+   "52+ (1+/wk)": 0.662
+  }
+ },
+ "encampment_exposure_same_cell": {
+  "waste": {
+   "0": 0.051,
+   "1-11 (<1/mo)": 0.243,
+   "12-51": 0.289,
+   "52+ (1+/wk)": 0.417
+  },
+  "control": {
+   "0": 0.104,
+   "1-11 (<1/mo)": 0.381,
+   "12-51": 0.267,
+   "52+ (1+/wk)": 0.248
+  }
+ },
+ "cells": {
+  "waste": 4619,
+  "encampment": 4773,
+  "waste_cells_with_encampment": 3338
+ },
+ "tracts_complete": 233,
+ "spearman_waste_per_1k_vs": {
+  "enc_per_1k": 0.88,
+  "ctrl_per_1k": 0.73,
+  "pop_density": 0.53,
+  "unit_density": 0.65,
+  "income": -0.18,
+  "rent": -0.29,
+  "renter_share": 0.66
+ },
+ "spearman_waste_per_km2_vs": {
+  "enc_per_km2": 0.92,
+  "ctrl_per_km2": 0.85,
+  "pop_density": 0.74,
+  "unit_density": 0.81,
+  "income": -0.21,
+  "rent": -0.32,
+  "renter_share": 0.69
+ },
+ "home_value": {
+  "tracts": 217,
+  "spearman_waste_per_1k": -0.07,
+  "spearman_waste_per_km2": -0.09
+ },
+ "ols_full": {
+  "n": 233,
+  "r2": 0.924,
+  "coefs": {
+   "encampment": {
+    "beta": 0.575,
+    "t": 18.02
+   },
+   "reporting_control": {
+    "beta": 0.217,
+    "t": 7.74
+   },
+   "pop_density": {
+    "beta": 0.223,
+    "t": 9.25
+   },
+   "income": {
+    "beta": -0.085,
+    "t": -2.15
+   },
+   "rent": {
+    "beta": 0.019,
+    "t": 0.49
+   },
+   "renter_share": {
+    "beta": 0.056,
+    "t": 2.24
+   }
+  }
+ },
+ "ols_encampment_only": {
+  "n": 233,
+  "r2": 0.847,
+  "coefs": {
+   "encampment": {
+    "beta": 0.92,
+    "t": 35.76
+   }
+  }
+ },
+ "ols_no_encampment": {
+  "n": 233,
+  "r2": 0.814,
+  "coefs": {
+   "reporting_control": {
+    "beta": 0.478,
+    "t": 12.83
+   },
+   "pop_density": {
+    "beta": 0.386,
+    "t": 11.05
+   },
+   "income": {
+    "beta": -0.007,
+    "t": -0.12
+   },
+   "rent": {
+    "beta": -0.021,
+    "t": -0.34
+   },
+   "renter_share": {
+    "beta": 0.217,
+    "t": 6.0
+   }
+  }
+ },
+ "ols_residential_only": {
+  "n": 233,
+  "r2": 0.68,
+  "coefs": {
+   "pop_density": {
+    "beta": 0.56,
+    "t": 13.29
+   },
+   "income": {
+    "beta": 0.121,
+    "t": 1.53
+   },
+   "rent": {
+    "beta": -0.132,
+    "t": -1.68
+   },
+   "renter_share": {
+    "beta": 0.412,
+    "t": 9.58
+   }
+  }
+ },
+ "low_encampment_half": {
+  "tracts": 117,
+  "waste_reports": 5511,
+  "share_of_all_waste": 0.11,
+  "share_of_population": 0.569,
+  "waste_per_1k": 11.7,
+  "spearman_waste_per_1k_vs": {
+   "enc_per_1k": 0.66,
+   "ctrl_per_1k": 0.56,
+   "pop_density": 0.22,
+   "unit_density": 0.37,
+   "income": 0.25,
+   "rent": -0.01,
+   "renter_share": 0.35
+  }
+ },
+ "high_encampment_half": {
+  "tracts": 116,
+  "waste_per_1k": 124.6,
+  "share_of_all_waste": 0.89
+ },
+ "income_terciles_all": [
+  {
+   "tercile": "low income",
+   "range": [
+    17569,
+    118347
+   ],
+   "waste_per_1k": 112.4,
+   "enc_per_1k": 108.3,
+   "ctrl_per_1k": 35.6
+  },
+  {
+   "tercile": "mid income",
+   "range": [
+    118590,
+    170568
+   ],
+   "waste_per_1k": 40.9,
+   "enc_per_1k": 64.6,
+   "ctrl_per_1k": 18.9
+  },
+  {
+   "tercile": "high income",
+   "range": [
+    171120,
+    250001
+   ],
+   "waste_per_1k": 34.6,
+   "enc_per_1k": 66.1,
+   "ctrl_per_1k": 27.1
+  }
+ ],
+ "income_terciles_low_encampment": [
+  {
+   "tercile": "low income",
+   "range": [
+    28393,
+    125327
+   ],
+   "waste_per_1k": 9.6,
+   "enc_per_1k": 10.1,
+   "ctrl_per_1k": 9.7
+  },
+  {
+   "tercile": "mid income",
+   "range": [
+    126058,
+    168483
+   ],
+   "waste_per_1k": 10.9,
+   "enc_per_1k": 10.7,
+   "ctrl_per_1k": 12.9
+  },
+  {
+   "tercile": "high income",
+   "range": [
+    170000,
+    250001
+   ],
+   "waste_per_1k": 14.9,
+   "enc_per_1k": 16.2,
+   "ctrl_per_1k": 15.1
+  }
+ ],
+ "density_terciles_low_encampment": [
+  {
+   "tercile": "low density",
+   "range": [
+    411,
+    6940
+   ],
+   "waste_per_1k": 9.8,
+   "enc_per_1k": 13.8,
+   "ctrl_per_1k": 11.6
+  },
+  {
+   "tercile": "mid density",
+   "range": [
+    7000,
+    9434
+   ],
+   "waste_per_1k": 12.2,
+   "enc_per_1k": 11.5,
+   "ctrl_per_1k": 12.6
+  },
+  {
+   "tercile": "high density",
+   "range": [
+    9556,
+    16834
+   ],
+   "waste_per_1k": 13.2,
+   "enc_per_1k": 11.3,
+   "ctrl_per_1k": 13.5
+  }
+ ],
+ "rent_terciles_low_encampment": [
+  {
+   "tercile": "low rent",
+   "range": [
+    646,
+    2402
+   ],
+   "waste_per_1k": 12.2,
+   "enc_per_1k": 12.8,
+   "ctrl_per_1k": 13.9
+  },
+  {
+   "tercile": "mid rent",
+   "range": [
+    2405,
+    3067
+   ],
+   "waste_per_1k": 12.3,
+   "enc_per_1k": 10.8,
+   "ctrl_per_1k": 10.7
+  },
+  {
+   "tercile": "high rent",
+   "range": [
+    3110,
+    3501
+   ],
+   "waste_per_1k": 10.7,
+   "enc_per_1k": 13.1,
+   "ctrl_per_1k": 13.1
+  }
+ ],
+ "mismatch": {
+  "low": {
+   "blocks": 4282,
+   "waste": 5296,
+   "enc": 13091,
+   "waste_share": 0.103
+  },
+  "both": {
+   "blocks": 1642,
+   "waste": 45296,
+   "enc": 53427,
+   "waste_share": 0.881
+  },
+  "waste_only": {
+   "blocks": 107,
+   "waste": 840,
+   "enc": 102,
+   "waste_share": 0.016
+  },
+  "enc_only": {
+   "blocks": 23,
+   "waste": 7,
+   "enc": 372,
+   "waste_share": 0.0
+  }
+ },
+ "clusters_total": 24,
+ "toilets": {
+  "total": 205,
+  "pit_stops": 16,
+  "pit_near_hot": 12,
+  "pit_near_hot_overnight": 3,
+  "restrooms_near_hot": 19,
+  "any_restroom": {
+   "waste": {
+    "median_m": 260,
+    "within_300m": 0.581
+   },
+   "control": {
+    "median_m": 313,
+    "within_300m": 0.481
+   },
+   "encampment": {
+    "median_m": 298,
+    "within_300m": 0.502
+   }
+  },
+  "pit_stop": {
+   "waste": {
+    "median_m": 434,
+    "within_300m": 0.377
+   },
+   "control": {
+    "median_m": 864,
+    "within_300m": 0.206
+   },
+   "encampment": {
+    "median_m": 499,
+    "within_300m": 0.285
+   }
+  }
+ }
+}
